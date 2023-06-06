@@ -75,8 +75,8 @@ const SlangEntries = () => {
   );
 };
 const Form = () => {
-  let [messageSlang, setMessageSlang] = useState("");
-  let [messageTranslated, setMessageTranslated] = useState("");
+  const [messageSlang, setMessageSlang] = useState("");
+  const [messageTranslated, setMessageTranslated] = useState("");
 
   const { data: session, status } = useSession();
 
